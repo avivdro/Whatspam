@@ -4,6 +4,7 @@ driver = webdriver.Chrome('C:\\Users\\Aviv\\Downloads\\chromedriver_win32\\chrom
 driver.implicitly_wait(15)
 driver.get('https://web.whatsapp.com')
 
+# loop forever
 while True:
     try:
         driver.find_element_by_css_selector("span[title='" + input("Enter name to spam: ") + "']").click()
